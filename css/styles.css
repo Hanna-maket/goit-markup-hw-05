@@ -693,6 +693,7 @@ p {
   height: 40px;
   background-color: transparent;
   padding-left: 38px;
+
 }
 
 .modal-input-label {
@@ -704,4 +705,23 @@ p {
   display: inline-block;
   margin-bottom: 4px;
   margin-top: 8px;
+}
+
+.input-icon {
+  position: absolute;
+  padding: 3px 0px;
+  width: 18px;
+  height: 24px;
+  fill: transparent;
+  left: 16px;
+  top: 50%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+}
+
+.input-wrapper {
+  position: relative;
 }

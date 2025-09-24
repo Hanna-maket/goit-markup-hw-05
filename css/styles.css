@@ -635,8 +635,6 @@ p {
   pointer-events: none;
 }
 
-.is-open {}
-
 .is-open {
   opacity: 1;
   visibility: visible;
@@ -761,14 +759,19 @@ p {
 
 .modal-submit {
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  gap: 10px;
+  background-color: #4D5AE5;
+  border: none;
   padding: 0;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 169px;
+  height: 56px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-submit:hover,
@@ -787,9 +790,10 @@ p {
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 textarea.modal-text-input {
@@ -824,10 +828,10 @@ a {
   width: 16px;
   height: 16px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  display: inline-flex;
 }
 
 .modal-check {

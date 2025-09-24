@@ -365,10 +365,15 @@
                         </a>
                     </li>
                 </ul>
+                <form class="footer-form">
+                    <label aria-label="footer email"><input type="email" placeholder="E-mail"
+                            class="footer-input" /></label>
+                    <button class="footer-form-btn"></button>
+                </form>
             </div>
         </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
         <div class="modal">
             <button type="button" class="modal-close">
                 <svg class="close-icon" width="8" height="8">
@@ -419,7 +424,7 @@
                     <textarea class="modal-text-input" placeholder="Text input" name="user-comment" id="user-comment"
                         rows="4"></textarea>
                 </div>
-                <div class="modal-form-input">
+                <div class="modal-form-input visibility: hidden">
                     <input type="checkbox" class="modal-check" name="user-privacy" id="user-privacy" value="true"
                         required />
                     <label for="user-privacy" class="modal-check-label"><span class="modal-check-box"></span>

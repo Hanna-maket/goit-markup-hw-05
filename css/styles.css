@@ -630,9 +630,14 @@ p {
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
-.backdrop.is-open {
+.is-open {}
+
+.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -778,13 +783,18 @@ p {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  border: 1px solid rgba(46, 47, 66, 0.4);
   padding: 8px 16px;
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
+}
+
+textarea.modal-text-input {
+  border-radius: 4px !important;
+  background-color: transparent !important;
 }
 
 .modal-check-label {
@@ -818,4 +828,12 @@ a {
   align-items: center;
   justify-content: center;
   fill: transparent;
+}
+
+.modal-check {
+  display: none;
+}
+
+.modal-text-input:focus {
+  border-color: #4D5AE5;
 }

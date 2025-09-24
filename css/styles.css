@@ -670,6 +670,11 @@ p {
   stroke: rgba(0, 0, 0, 0.1);
 }
 
+.modal-close:hover {
+  border-radius: 100%;
+  fill: #404bbf;
+}
+
 .modal-title {
   font-weight: 500;
   font-size: 16px;
@@ -687,5 +692,16 @@ p {
   width: 360px;
   height: 40px;
   background-color: transparent;
+  padding-left: 38px;
+}
 
+.modal-input-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: inline-block;
+  margin-bottom: 4px;
+  margin-top: 8px;
 }

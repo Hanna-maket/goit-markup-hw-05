@@ -865,7 +865,16 @@ p {
   border: none;
 }
 
-.modal-check:checked+.modal-check-label .check-icon {
+.modal-check:checked+.modal-check-label .modal-check-box {
+  background-color: var(--accent-color, #404bbf);
+  /* фон спану */
+  border: none;
+  /* вимикаємо стандартний бордер */
+  color: var(--icon-color, #F4F4FD);
+  /* колір svg через currentColor */
+}
+
+.modal-check:checked+.modal-check-label .check-icon svg {
   fill: var(--icon-color, #F4F4FD);
 }
 

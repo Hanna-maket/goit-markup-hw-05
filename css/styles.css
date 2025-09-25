@@ -793,10 +793,12 @@ p {
 }
 
 .modal-submit {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
   border-radius: 50%;
-  display: inline-flex;
   gap: 10px;
-  background-color: #4D5AE5;
+  display: block;
+  margin: 0 auto;
   border: none;
   padding: 0;
   min-width: 169px;
@@ -855,7 +857,8 @@ a {
 .modal-check:checked {
   border-radius: 2px;
   fill: #404bbf;
-  border: 1px solid #404bbf;
+  border: none;
+  background-color: #404bbf;
 }
 
 
@@ -869,6 +872,7 @@ a {
   justify-content: center;
   fill: transparent;
   display: flex;
+
 }
 
 .modal-check {
@@ -877,4 +881,12 @@ a {
 
 .modal-text-input:focus {
   border-color: #4D5AE5;
+}
+
+.check-icon {
+  fill: transparent;
+}
+
+.privacy-link {
+  color: #4d5ae5;
 }

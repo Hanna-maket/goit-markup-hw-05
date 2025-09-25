@@ -877,12 +877,12 @@ p {
   display: none;
 }
 
-input.visually-hidden:checked+label>.modal-check-box {
+input[type="checkbox"]:checked+label .modal-check-box {
   background-color: #404bbf;
   border: none;
 }
 
-input.visually-hidden:checked+label>.modal-check-box .check-icon {
+input[type="checkbox"]:checked+label .modal-check-box .check-icon {
   fill: #F4F4FD;
 }
 

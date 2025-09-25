@@ -759,20 +759,22 @@ p {
   padding: 0;
 }
 
-.visually-hidden:checked+.modal-check-label .modal-check-box {
-  background-color: var(--accent-color, #404bbf);
+/* стилі для стану чекбоксу */
+#user-privacy:checked+.modal-check-label .modal-check-box {
+  background-color: var(--accent, #404bbf);
+  /* синій фон */
   border: none;
-  color: var(--icon-color, #F4F4FD);
-  /* для currentColor у SVG */
+  /* прибираємо стандартний бордер */
+}
+
+/* коли чекбокс активний — міняємо колір іконки */
+#user-privacy:checked+.modal-check-label .modal-check-box .check-icon {
+  fill: var(--white, #F4F4FD);
 }
 
 .modal-close:hover .close-icon,
 .modal-close:focus .close-icon {
   fill: #fff;
-}
-
-.visually-hidden:checked+.modal-check-label .check-icon {
-  fill: var(--icon-color, #F4F4FD);
 }
 
 .modal-check-box {

@@ -864,15 +864,15 @@ p {
   display: none;
 }
 
-.modal-check:checked+.modal-check-label .modal-check-box {
-  background-color: var(--accent-color, #404bbf);
-  border: none;
-}
 
 .modal-check:checked+.modal-check-label .modal-check-box {
   background-color: #404bbf;
   border: none;
   color: #F4F4FD;
+}
+
+.modal-check:checked+.modal-check-label .check-icon {
+  fill: #F4F4FD;
 }
 
 .modal-submit:hover,

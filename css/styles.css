@@ -858,15 +858,6 @@ a {
   border: 1px solid #404bbf;
 }
 
-.modal-check:checked+.modal-check-label .modal-check-box {
-  background-color: var(--accent-color, #404bbf);
-  border: none;
-  fill: var(--icon-color, #f4f4fd);
-}
-
-.privacy-link {
-  color: var(--link-color, #4d5ae5);
-}
 
 .modal-check-box {
   border-radius: 2px;

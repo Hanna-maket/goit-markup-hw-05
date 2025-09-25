@@ -851,18 +851,13 @@ p {
   margin-bottom: 8px;
 }
 
-.modal-form-input:last-of-type {
+.modal-form-box:last-of-type {
   margin-bottom: 24px;
 }
 
 .modal-check {
   margin-bottom: 24px;
   display: none;
-}
-
-.modal-check:checked+.modal-check-label .modal-check-box {
-  background-color: var(--accent-color, #404bbf);
-  border: none;
 }
 
 .modal-check:checked+.modal-check-label .modal-check-box {

@@ -619,7 +619,6 @@ p {
 }
 
 .backdrop.is-open {
-  margin-bottom: 8px;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -847,8 +846,8 @@ p {
   cursor: pointer;
 }
 
-.modal-title {
-  margin-bottom: 16px;
+.modal-title+.modal-form-input {
+  margin-top: 16px;
 }
 
 .modal-form-input {

@@ -649,7 +649,11 @@ p {
 .footer-form {
   display: flex;
   gap: 24px;
+}
 
+.footer-form-btn .social-icon-footer {
+  margin-left: 16px;
+  fill: #ffffff;
 }
 
 .footer-form-btn {
@@ -672,8 +676,8 @@ p {
   border: none;
 }
 
-.social-icon-footer {
-  margin-left: 16px;
+.footer-form-btn:hover {
+  background-color: #404bbf;
 }
 
 .backdrop {

@@ -770,7 +770,6 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin: 0 0 16px 0;
 }
 
 .modal-input {
@@ -845,7 +844,7 @@ p {
 }
 
 .modal-title+.modal-form-input {
-  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .modal-form-input {
@@ -929,7 +928,7 @@ a {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  display: flex;
+  display: inline-flex;
 }
 
 .modal-text-input:focus {

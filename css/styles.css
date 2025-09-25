@@ -877,10 +877,13 @@ p {
   display: none;
 }
 
-input[type="checkbox"]:checked+label .checkbox {
-  fill: #F4F4FD;
+input[type="checkbox"]:checked+label .modal-check-box {
   background-color: #404bbf;
   border: none;
+}
+
+input[type="checkbox"]:checked+label .modal-check-box .check-icon {
+  fill: #F4F4FD;
 }
 
 .modal-submit:hover,

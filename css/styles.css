@@ -943,6 +943,11 @@ a {
   margin-right: 8px;
 }
 
+.modal-check-label {
+  display: inline-flex;
+  align-items: center;
+}
+
 .modal-text-input:focus {
   border-color: #4D5AE5;
 }

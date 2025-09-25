@@ -759,22 +759,20 @@ p {
   padding: 0;
 }
 
-/* стилі для стану чекбоксу */
-#user-privacy:checked+.modal-check-label .modal-check-box {
-  background-color: var(--accent, #404bbf);
-  /* синій фон */
+.visually-hidden:checked+.modal-check-label .modal-check-box {
+  background-color: var(--accent-color, #404bbf);
   border: none;
-  /* прибираємо стандартний бордер */
-}
-
-/* коли чекбокс активний — міняємо колір іконки */
-#user-privacy:checked+.modal-check-label .modal-check-box .check-icon {
-  fill: var(--white, #F4F4FD);
+  color: var(--icon-color, #F4F4FD);
+  /* для currentColor у SVG */
 }
 
 .modal-close:hover .close-icon,
 .modal-close:focus .close-icon {
   fill: #fff;
+}
+
+.visually-hidden:checked+.modal-check-label .check-icon {
+  fill: var(--icon-color, #F4F4FD);
 }
 
 .modal-check-box {
@@ -879,10 +877,10 @@ p {
   display: none;
 }
 
-.modal-check:checked+.modal-check-label .modal-check-box {
+input[type="checkbox"]:checked+label .checkbox {
+  fill: #F4F4FD;
   background-color: #404bbf;
   border: none;
-  color: #F4F4FD;
 }
 
 .modal-submit:hover,

@@ -926,12 +926,6 @@ textarea.modal-text-input {
   align-items: center;
 }
 
-span.modal-check-box {
-  display: inline-flex;
-  width: 16px;
-  height: 16px;
-}
-
 a {
   line-height: 1.33333;
   text-decoration: underline;

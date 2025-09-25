@@ -626,6 +626,8 @@ p {
   height: 40px;
   background-color: transparent;
   padding-left: 24px;
+  display: flex;
+  scroll-margin-left: 120px;
 }
 
 ::placeholder {
@@ -642,6 +644,13 @@ p {
   width: 165px;
   height: 40px;
   background: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  gap: 16px;
 }
 
 .backdrop {

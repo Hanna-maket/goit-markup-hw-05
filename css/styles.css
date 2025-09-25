@@ -794,7 +794,7 @@ p {
 
 .modal-submit {
   border-radius: 50%;
-  display: block;
+  display: inline-flex;
   gap: 10px;
   background-color: #4D5AE5;
   border: none;
@@ -807,6 +807,7 @@ p {
   text-align: center;
   color: #fff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .modal-submit:hover,
@@ -855,6 +856,16 @@ a {
   border-radius: 2px;
   fill: #404bbf;
   border: 1px solid #404bbf;
+}
+
+.modal-check:checked+.modal-check-label .modal-check-box {
+  background-color: var(--accent-color, #404bbf);
+  border: none;
+  fill: var(--icon-color, #f4f4fd);
+}
+
+.privacy-link {
+  color: var(--link-color, #4d5ae5);
 }
 
 .modal-check-box {

@@ -770,6 +770,7 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin: 0 0 16px 0;
 }
 
 .modal-input {
@@ -844,29 +845,24 @@ p {
 }
 
 .modal-title+.modal-form-input {
-  margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 .modal-form-input {
   margin-bottom: 8px;
 }
 
-.modal-form-box:last-of-type {
+.modal-form-input:last-of-type {
   margin-bottom: 24px;
 }
 
 .modal-check {
   margin-bottom: 24px;
-  display: none;
 }
 
 .modal-check:checked+.modal-check-label .modal-check-box {
   background-color: var(--accent-color, #404bbf);
-  /* фон span при checked */
   border: none;
-  /* прибираємо бордер */
-  color: var(--icon-color, #F4F4FD);
-  /* колір SVG */
 }
 
 .modal-check:checked+.modal-check-label .check-icon {
@@ -932,7 +928,11 @@ a {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  display: inline-flex;
+  display: flex;
+}
+
+.modal-check {
+  display: none;
 }
 
 .modal-text-input:focus {
@@ -940,7 +940,7 @@ a {
 }
 
 .check-icon {
-  fill: currentColor;
+  fill: transparent;
 }
 
 .privacy-link {

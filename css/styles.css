@@ -874,7 +874,7 @@ p {
   /* колір svg через currentColor */
 }
 
-.modal-check:checked+.modal-check-label .check-icon svg {
+.modal-check:checked+.modal-check-label .check-icon {
   fill: var(--icon-color, #F4F4FD);
 }
 
@@ -945,7 +945,7 @@ a {
 }
 
 .check-icon {
-  fill: transparent;
+  fill: currentColor;
 }
 
 .privacy-link {

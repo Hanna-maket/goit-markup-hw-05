@@ -647,7 +647,9 @@ p {
 }
 
 .footer-form {
-  display: block;
+  display: flex;
+  gap: 24px;
+
 }
 
 .footer-form-btn {
@@ -666,7 +668,12 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  border: none;
+}
 
+.social-icon-footer {
+  margin-left: 16px;
 }
 
 .backdrop {

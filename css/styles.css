@@ -862,20 +862,11 @@ p {
 
 .modal-check:checked+.modal-check-label .modal-check-box {
   background-color: var(--accent-color, #404bbf);
+  /* фон span при checked */
   border: none;
-}
-
-.modal-check:checked+.modal-check-label .modal-check-box {
-  background-color: var(--accent-color, #404bbf);
-  /* фон спану */
-  border: none;
-  /* вимикаємо стандартний бордер */
+  /* прибираємо бордер */
   color: var(--icon-color, #F4F4FD);
-  /* колір svg через currentColor */
-}
-
-.modal-check:checked+.modal-check-label .check-icon {
-  fill: var(--icon-color, #F4F4FD);
+  /* колір SVG */
 }
 
 .modal-submit:hover,
@@ -946,8 +937,14 @@ a {
 
 .check-icon {
   fill: currentColor;
+  width: 10px;
+  height: 8px;
 }
 
 .privacy-link {
   color: #4d5ae5;
+}
+
+.modal-form-input:nth-of-type(4) {
+  margin-bottom: 16px;
 }

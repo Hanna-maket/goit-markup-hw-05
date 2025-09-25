@@ -945,6 +945,6 @@ a {
   color: #4d5ae5;
 }
 
-.modal-form-input:nth-of-type(4) {
+.modal-form-input.comment {
   margin-bottom: 16px;
 }

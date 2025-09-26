@@ -762,7 +762,7 @@ p {
 .visually-hidden:checked+.modal-check-label .modal-check-box {
   background-color: var(--accent-color, #404bbf);
   border: none;
-  color: var(--icon-color, #F4F4FD);
+  fill: var(--icon-color, #F4F4FD);
   /* для currentColor у SVG */
 }
 
